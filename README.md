@@ -135,4 +135,5 @@ Change the url of the About Me page from "about-me" to "about-becode" in the ann
 
 ## Nice to have features
 - Use the [Session bag](https://symfony.com/doc/current/components/http_foundation/sessions.html) from Symfony instead the native $_SESSION variable
+
 - Complex: Use a symfony form for the "change name" form.
