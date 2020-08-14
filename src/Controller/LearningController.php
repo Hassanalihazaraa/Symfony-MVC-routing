@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class LearningController extends AbstractController
 {
     /**
-     * @Route("/about", name="about-me")
+     * @Route("/about-becode", name="about")
      */
     public function aboutMe(): Response
     {
@@ -17,10 +17,10 @@ class LearningController extends AbstractController
     }
 
     /**
-     * @Route("/", name="my-name")
+     * @Route("/", name="show-name")
      */
     public function showMyName()
     {
-        return $this->render('learning/show-myname.html.twig', ['showName' => 'Hassan']);
+        return $this->render('learning/show-myname.html.twig', ['showName' => 'Unknown']);
     }
 }

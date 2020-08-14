@@ -8,8 +8,35 @@
             text-align: center;
             margin-top: 2rem;
         }
+
+        .form {
+            margin: 5rem auto;
+            width: 80%;
+        }
+
+        input[type=text] {
+            text-align: center;
+        }
+
+        .btn {
+            width: 95%;
+            margin: 1rem auto;
+        }
     </style>
     <div>
-        <h1>Hello {{ showName }}</h1>
+    <a href="{{ path('about') }}" class="link-primary">About me</a>
+    <h1>Hello {{ showName }}</h1>
+    <div class="form">
+        <form class="row g-3" method="post" action="">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+        </form>
     </div>
 {% endblock %}
