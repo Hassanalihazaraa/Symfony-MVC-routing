@@ -27,7 +27,7 @@
     <a href="{{ path('about') }}" class="link-primary">About me</a>
     <h1>Hello {{ showName }}</h1>
     <div class="form">
-        <form class="row g-3" method="post" action="">
+        <form class="row g-3" method="post" action="{{ path('show-name') }}">
             <div class="row">
                 <div class="col">
                     <input type="text" class="form-control" placeholder="First name" aria-label="First name">
