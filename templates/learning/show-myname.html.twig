@@ -16,24 +16,24 @@
 
         input[type=text] {
             text-align: center;
+            width: 50%;
+            margin: 0 auto;
         }
 
         .btn {
-            width: 95%;
+            width: 50%;
             margin: 1rem auto;
         }
     </style>
     <div>
     <a href="{{ path('about') }}" class="link-primary">About me</a>
-    <h1>Hello {{ showName }}</h1>
+    <h1>Hello {{ name }}</h1>
     <div class="form">
-        <form class="row g-3" method="post" action="{{ path('show-name') }}">
+        <form class="row g-3" method="post" action="{{ path('change-name') }}">
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    <input type="text" name="fullname" class="form-control" placeholder="First name"
+                           aria-label="First name">
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Add</button>
